@@ -1,0 +1,395 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+* {
+    box-sizing: border-box;/*hace que el ancho y alto de un elemento incluyan el contenido*/
+    font-family: "Source Sans 3", serif;
+    margin: 0;
+    padding: 0;
+}
+
+html
+{
+    scroll-behavior: smooth;/*permite deslizar cuando se hace clic en los links del menu*/
+}
+
+/* Menu */
+.content-header 
+{
+    background: #0D1117;
+    position: fixed; /*posiciona un elemento respecto al viewport, manteniéndolo fijo en su lugar incluso al hacer scroll.*/
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;    
+}
+
+.content-header header
+{
+    max-width: 1500px;/*ancho maximo*/
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+}
+
+.content-header header .logo a
+{
+    font-family: "Nunito", serif;
+    font-size: 1.5rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+.content-header header ul 
+{
+    display: flex;
+    list-style: none;
+}
+
+.content-header header nav ul li a 
+{
+    color: #fff;
+    margin: 0 15px;
+    padding: 3px 10px;
+    transition: .5s;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.content-header header nav ul li a:hover 
+{
+    color: #2ECC71;
+}
+
+
+/*Inicio*/
+
+.inicio
+{
+    color:#221b1b;
+    background-position: center;
+    height: 100vh;
+    min-height: 10rem;
+    max-width: 120rem;
+    position: relative;
+}
+
+.contenido-inicio
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 60rem;
+    width: 92%;
+}
+
+.inicio-h1
+{
+    font-size: 3rem;
+    text-transform: uppercase;/*transforma a mayus*/
+    letter-spacing: 3px;
+    text-align: center;
+    color: #111;
+    font-weight: 800;
+}
+
+.contenido-inicio_info
+{
+    margin: 3rem;
+    max-width: 80rem;
+}
+
+.inicio_p
+{
+    color: #333;
+    font-size: 1.5rem;
+    text-align: center;
+    width: 100%;
+    line-height: 1.6;
+}
+
+.contenido-inicio_boton
+{
+    margin-top: 2rem;
+    text-align: center;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+.btn
+{
+    background-color: #2ECC71;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+    font-weight: 700;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px 0 rgb(0, 0, 0, 0.15);
+    transition: transform .3s;
+}
+
+.btn:hover
+{
+    transform: translateY(-3px);
+}
+
+.btn_proyec
+{
+    padding: 1rem 3rem;
+    font-size: 1.3rem;
+}
+
+
+.sobreMi, .proyectos, .contacto
+{
+    padding: 4.5rem 9rem;
+}
+
+
+/*Sobre Mi*/
+.contenedor-main
+{
+    max-width: 120rem;
+    margin: auto;
+    width: 92%;
+}
+
+.titulo_seccion
+{
+    display: block;
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: center;
+    margin-bottom: 3.5rem;
+    margin-top: 1rem;
+    position: relative;
+    color: #111;
+}
+
+.contenido-sobreMi_main
+{
+    padding-bottom:3rem ;
+}
+
+.contenido-sobreMi_titulos
+{
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.contenido-sobreMi_detalles_parra
+{
+    font-size: 1.5rem;
+    color: #666;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+}
+
+.btn_st
+{
+    padding: 1rem 3rem;
+    font-size: 1.3rem;
+}
+
+.skills
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skills_sk
+{
+    padding: 1rem 2rem;
+    margin-bottom: 1.5rem;
+    margin-right: 1.5rem;
+    font-size: 1.6rem;
+    background: rgba(153, 153, 153, 0.2);
+    border-radius: 5px;
+    font-weight: 600;
+    color: #666;
+}
+
+/*Proyectos*/
+
+.proyecto_row
+{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-gap: 5rem;
+    margin-bottom: 11rem;
+}
+
+.proyecto_row_img-cont
+{
+    overflow: hidden;
+}
+
+.proyecto_row-img
+{
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+
+.proyecto_row-contenido
+{
+    /* padding: 2rem 0; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.proyecto_row-contenido-titulo
+{
+    font-weight: 700;
+    font-size: 2.8rem;
+    margin-bottom: 2rem;
+}
+
+.proyecto_row-contenido-p
+{
+    font-size: 1.5rem;
+    color: #666;
+    max-width: 60rem;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+}
+
+/*Contacto*/
+button
+{
+    border: none;
+    cursor: pointer;
+}
+textarea
+{
+    resize: none;
+}
+
+.contacto_form-container
+{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background: #fff;
+    padding: 3rem;
+    max-width: 50rem;
+    text-align: right;
+    width: 95%;
+    border-radius: 5px;
+    margin: 3rem auto 0 auto;
+}
+
+.form_campo
+{
+    margin-bottom: 2.5rem;
+}
+
+.form_label
+{
+    color: #666;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    display: block;
+    text-align: left;
+}
+
+.form_input
+{
+    color: #333;
+    padding: 1rem;
+    width: 100%;
+    border: 1px solid #ebebeb;
+    font-size: 1rem;
+    background: #f0f0f0;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.btn_form
+{
+    
+    padding: 1rem 3.3rem;
+    font-size: 1.2rem;
+}
+
+/*Footer*/
+
+footer
+{
+    background-color: #252A2E;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+.btn-arriba
+{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #1cb698;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -25px;
+    border-radius: 50%;
+    line-height: 50px;
+    font-size: 18px;
+}
+
+
+
+.redes 
+{
+    display: flex;
+    justify-content: center;
+}
+
+footer .redes a
+{
+    color: #fff;
+    /* display: inline-block; */
+    /* width: 42px;
+    height: 42px; */
+    margin: 0px 50px;
+    /* padding: 3px; */
+    font-size: 3rem;
+    transition: .3s;
+}
+
+footer h2
+{
+    font-size: 2.2rem;
+    letter-spacing: 3px;
+    margin: 10px;
+}
+
+/*Responsive*/
+@media only screen and (max-width: 56.25em) 
+{
+ .proyecto_row
+ {
+    grid-template-columns: 1fr;
+    text-align: center;
+ }
+ 
+ .proyecto_row-contenido
+ {
+    align-items: center;
+ }
+}

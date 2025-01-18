@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel ="stylesheet" type = "text/css" href = "estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/220a75e317.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="content-header">
+        <header>
+            <div class="logo">
+                <a href="#inicio">Mauro Dominguez</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#sobreMi">Sobre Mi</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <section id="inicio" class="inicio">
+        <div class="contenido-inicio">
+            <h1 class="inicio-h1">Hola, Soy Mauro Dominguez</h1>
+            <div class="contenido-inicio_info">
+                <p class="inicio_p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem sint quidem sed! Deleniti aperiam ea repudiandae nemo sit ipsam minus, at vitae ducimus et neque itaque suscipit harum, dolores quaerat!</p>
+            </div>
+            <div class="contenido-inicio_boton">
+                <a href="#proyectos" class="btn btn_proyec">Proyectos</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobreMi" class="sobreMi">
+        <div class="contenedor-main">
+            <h2 class="titulo_seccion">Sobre mi</h2>
+            <div class="contenido-sobreMi_main">
+                <h3 class="contenido-sobreMi_titulos">Conoceme</h3>
+                <div class="contenido-sobreMi_detalles">
+                    <p class="contenido-sobreMi_detalles_parra">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto tenetur repudiandae laborum debitis, necessitatibus perferendis suscipit fugiat vero pariatur at! Deserunt porro voluptas incidunt neque, excepturi exercitationem perferendis tempore. Adipisci.</p>
+                </div>        
+                <a href="#contacto" class="btn btn_st">Contacto</a>
+            </div>
+            <div class="contenido-sobremi_skills">
+                <h3 class="contenido-sobreMi_titulos">Stack</h3>
+                <div class="skills">
+                    <div class="skills_sk">C#</div>
+                    <div class="skills_sk">.Net</div>
+                    <div class="skills_sk">Html</div>
+                    <div class="skills_sk">Css</div>
+                    <div class="skills_sk">JavaScript</div>
+                    <div class="skills_sk">Angular</div>
+                    <div class="skills_sk">SQL</div>
+                    <div class="skills_sk">Git</div>
+                    <div class="skills_sk">GitHub</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="proyectos" class="proyectos">
+        <div class="contenedor-main">
+            <h2 class="titulo_seccion">Proyectos</h2>
+            <div class="contenido-proyecto">
+                    <div class="proyecto_row">
+                        <div class="proyecto_row_img-cont">
+                            <img src="noload.jpg" alt="Imagen de Software" class="proyecto_row-img">
+                        </div>
+                        <div class="proyecto_row-contenido">
+                            <h3 class="proyecto_row-contenido-titulo">Titulo</h3>
+                            <p class="proyecto_row-contenido-p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam pariatur, eligendi omnis expedita, accusamus aspernatur nisi sapiente repellat quas, aut corrupti. Optio facere distinctio unde vel debitis eum, impedit quae!</p>
+                            <a href="#" class="btn btn_st">Ver Proyecto</a>
+                        </div>
+                    </div>
+                    <div class="contenido-proyecto">
+                        <div class="proyecto_row">
+                            <div class="proyecto_row_img-cont">
+                                <img src="noload.jpg" alt="Imagen de Software" class="proyecto_row-img">
+                            </div>
+                            <div class="proyecto_row-contenido">
+                                <h3 class="proyecto_row-contenido-titulo">Titulo</h3>
+                                <p class="proyecto_row-contenido-p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam pariatur, eligendi omnis expedita, accusamus aspernatur nisi sapiente repellat quas, aut corrupti. Optio facere distinctio unde vel debitis eum, impedit quae!</p>
+                                <a href="#" class="btn btn_st">Ver Proyecto</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contacto" class="contacto">
+        <div class="contenedor-main">
+            <h2 class="titulo_seccion">Contacto</h2>
+            <div class="contacto_form-container">
+                <form action="#" class="form_contacto" method="post">
+                    <div class="form_campo">
+                        <label for="nombre" class="form_label">Nombre</label>
+                        <input class="form_input" type="text" required placeholder="Nombre" name="nombre" id="nombre">
+                    </div>
+                    <div class="form_campo">
+                        <label for="email" class="form_label">Email</label>
+                        <input class="form_input" type="email" required placeholder="Email" name="email" id="email">
+                    </div>
+                    <div class="form_campo">
+                        <label class="form_label" for="mensaje">Mensaje</label>
+                        <textarea required placeholder="Mensaje" cols="30" rows="10" class="form_input" name="Mensaje" id="mensaje"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn_form">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="contenedor-main">
+            <a href="#inicio" class="btn-arriba">
+                <i class="fa-solid fa-angles-up"></i>
+            </a>
+            <h2 class="footer-titulo">Redes</h2>
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <hr>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <hr>
+                <a href="#"><i class="fa-brands fa-github"></i></a>             
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
